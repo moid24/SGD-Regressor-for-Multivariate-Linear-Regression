@@ -1,24 +1,29 @@
-SGD-Regressor-for-Multivariate-Linear-Regression
-AIM:
+# SGD-Regressor-for-Multivariate-Linear-Regression
+
+## AIM:
 To write a program to predict the price of the house and number of occupants in the house with SGD regressor.
 
-Equipments Required:
-Hardware – PCs
-Anaconda – Python 3.7 Installation / Jupyter notebook
-Algorithm
-Load California housing data, select features and targets, and split into training and testing sets.
+## Equipments Required:
+1. Hardware – PCs
+2. Anaconda – Python 3.7 Installation / Jupyter notebook
 
-Scale both X (features) and Y (targets) using StandardScaler.
+## Algorithm
 
-Use SGDRegressor wrapped in MultiOutputRegressor to train on the scaled training data.
+1. Load California housing data, select features and targets, and split into training and testing sets.
+   
+2. Scale both X (features) and Y (targets) using StandardScaler.
 
-Predict on test data, inverse transform the results, and calculate the mean squared error.
+3. Use SGDRegressor wrapped in MultiOutputRegressor to train on the scaled training data.
 
-Program:
+4. Predict on test data, inverse transform the results, and calculate the mean squared error.
+
+## Program:
+
+
 Program to implement the multivariate linear regression model for predicting the price of the house and number of occupants in the house with SGD regressor.
-
-Developed by: Moid Vanak
-RegisterNumber:212223080033
+## Developed by: Moid Vanak
+## RegisterNumber:212223080033
+```python
 import numpy as np
 from sklearn.datasets import fetch_california_housing
 from sklearn.linear_model import SGDRegressor
@@ -45,8 +50,12 @@ Y_test=scaler_Y.inverse_transform(Y_test)
 mse=mean_squared_error(Y_test,Y_pred)
 print("Mean Square Error:",mse)
 print("\nPredictions:\n",Y_pred[:5])
-Output:
-image
+```
 
-Result:
+## Output:
+
+![image](https://github.com/user-attachments/assets/579b2ade-fd49-4163-88ce-e4e213f73754)
+
+
+## Result:
 Thus the program to implement the multivariate linear regression model for predicting the price of the house and number of occupants in the house with SGD regressor is written and verified using python programming.
