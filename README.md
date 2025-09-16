@@ -9,7 +9,7 @@ Load California housing data, select features and targets, and split into traini
 Program:
 Program to implement the multivariate linear regression model for predicting the price of the house and number of occupants in the house with SGD regressor.
 
-Developed by:Moid Vanak
+Developed by: Moid Vanak
 
 RegisterNumber: 212223080033
 
